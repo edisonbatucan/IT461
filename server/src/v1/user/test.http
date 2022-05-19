@@ -1,0 +1,53 @@
+@host = http://127.0.0.1:6000/v1/users
+
+
+GET {{host}}/?fields=name&offset=0&limit=2&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWQiOjEwMCwiZXhwIjoxNjUzMDExMDc2fQ.cfljxkd3om3ZEBPEJ87eh6eozyPn0brOL1KKrVq__SQ HTTP/1.1
+
+
+### Create user
+POST {{host}}/?fields=name&offset=0&limit=2&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWQiOjEwMCwiZXhwIjoxNjUzMDExMDc2fQ.cfljxkd3om3ZEBPEJ87eh6eozyPn0brOL1KKrVq__SQ HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 0,
+    "username": "Edison Batucan",
+    "password": "gwapo"
+}
+
+
+### Update user
+PUT {{host}}/?fields=name&offset=0&limit=2&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWQiOjEwMCwiZXhwIjoxNjUzMDExMDc2fQ.cfljxkd3om3ZEBPEJ87eh6eozyPn0brOL1KKrVq__SQ HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 4,
+    "username": "Therese Bolabola",
+    "password": "shiny"
+}
+
+
+### Delete user
+DELETE {{host}}/?fields=name&offset=0&limit=2&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWQiOjEwMCwiZXhwIjoxNjUzMDExMDc2fQ.cfljxkd3om3ZEBPEJ87eh6eozyPn0brOL1KKrVq__SQ HTTP/1.1
+Content-Type: application/json
+
+[14]
+
+
+
+### Get one user
+GET {{host}}/?fields=name&offset=0&limit=2&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWQiOjEwMCwiZXhwIjoxNjUzMDExMDc2fQ.cfljxkd3om3ZEBPEJ87eh6eozyPn0brOL1KKrVq__SQ HTTP/1.1
+
+
+### Update one user
+PUT {{host}}/?fields=name&offset=0&limit=2&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWQiOjEwMCwiZXhwIjoxNjUzMDExMDc2fQ.cfljxkd3om3ZEBPEJ87eh6eozyPn0brOL1KKrVq__SQ HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": 0, 
+  "username": "Kenji Tabanao",
+  "password": "machinelearningml"
+}
+
+
+### Delete one user
+DELETE {{host}}/ HTTP/1.1
