@@ -10,6 +10,11 @@ import Lounge from './components/Lounge';
 import LinkPage from './components/LinkPage';
 import RequireAuth from './components/RequireAuth';
 import { Routes, Route } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import DogAdd from './components/DogAdd';
+import DogDetail from './components/DogDetail';
+import DogEdit from './components/DogEdit';
+import DogDelete from './components/DogDelete';
 
 const ROLES = {
   'User': 2001,
